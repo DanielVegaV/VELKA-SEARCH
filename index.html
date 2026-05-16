@@ -70,6 +70,13 @@
       min-width: 220px;
     }
 
+    .logo-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     .logo-icono {
       width: 44px;
       height: 44px;
@@ -654,7 +661,9 @@
     <div class="nav-contenido">
       <div class="nav-marca">
         <img class="logo-icono" src="Icono.jpeg" alt="Ícono del sistema" onerror="this.style.display='none'" />
-        <img class="logo-nombre" src="NombreLogo.jpeg" alt="Nombre del logo" onerror="this.style.display='none'" />
+        <a class="logo-link" href="https://web-principal-ehg8.vercel.app" aria-label="Ir a la página principal de VEKTA">
+          <img class="logo-nombre" src="NombreLogo.jpeg" alt="Nombre del logo" onerror="this.style.display='none'" />
+        </a>
       </div>
 
       <div class="nav-links">
@@ -674,7 +683,7 @@
     <section class="buscador-card">
       <h1>Ficha ganadera</h1>
       <div class="buscador">
-        <input id="entradaId" type="text" placeholder="Digite ID: VACA-001" />
+        <input id="entradaId" type="text" placeholder="Digite ID:" />
         <button onclick="buscarPorId()">Buscar</button>
       </div>
     </section>
